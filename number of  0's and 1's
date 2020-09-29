@@ -1,0 +1,9 @@
+s=input()
+l={'0':0,'1':0}
+for i in s:
+	if(i=='0'):
+		l['0']+=1
+	elif(i=='1'):
+		l['1']+=1
+print("number of 0's: ",l['0'])
+print("number of 1's: ",l['1'])
