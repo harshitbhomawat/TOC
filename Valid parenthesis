@@ -1,0 +1,29 @@
+include<bits/stdc++.h>
+using namespace std;
+
+int valid(string s){
+stack<char> b;
+for(int i=0;i<s.size();i++){
+if(s[i]="("){
+b.push("(");
+}
+else if(s[i]=")"){
+if(b.empty()){
+return 0;
+}
+b.pop();
+}
+}
+if(b.empty())
+return 1;
+return 0;
+}
+int main(){
+string s;
+cout<<"enter name"<<endl;
+cin>>s;
+if(valid(s))
+cout<<"accept";
+else
+cout<<"Not accepted";
+}
